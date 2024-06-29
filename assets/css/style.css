@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.textTri{
+
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+
+}
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: relative; /* Para ajustar o texto */
+}
+
+.forma h2 {
+    color: white;
+    font-size: 14px; /* Tamanho do texto */
+    text-align: center; /* Centralizar texto */
+    margin: 0; /* Remover margens padrão */
+    position: absolute; /* Posicionar o texto dentro da forma */
+    z-index: 1; /* Para o texto ficar na frente */
+}
+.container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 100vh;
+}
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+}
+.quadrado:hover{
+    background-color: #3db1ff;
+}
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #e74c3c;
+}
+.triangulo:hover{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ff7061;
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+}
+.circulo:hover{
+    background-color: #3eff8e;
+}
+
+.trapezio {
+    width: 200px;
+    height: 100px;
+    background-color: #9b59b6;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
+.trapezio:hover{
+    background-color: #db80ff;
+}
